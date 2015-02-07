@@ -245,13 +245,13 @@ Get a random number between 1 and
 <input type="button" id="randomButton3" value="Go"> <span id="randomResult3"></span>
 <script>
 // Can you figure out how to do this one?
-</script>document.getElementById('randomButton2').onclick = function(){
 document.getElementById('randomButton2').onclick = function(){
   result = Math.random()
   result = result * 10
   result = Math.ceil(result)  // This rounds the number down
   document.getElementById('randomResult2').textContent = result
 }
+</script>
 
 <h2>Number guessing game (Finish this one yourself.)</h2>
 I'm thinking of a number between 1 and 10. What do you think it is?
@@ -296,3 +296,6 @@ document.getElementById('recallButton').onclick = function(){
 if (new Date() - location.search.substr(1) > 1000) location.href = location.pathname + '?' + new Date() * 1
 </script>
 </body>
+
+      <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/45413512/?autostart=false" frameborder="0" allowfullscreen></iframe>
+    
