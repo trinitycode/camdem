@@ -174,7 +174,7 @@ Your favorite color:
 </script>
 
 
-<h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
+<h2>Is your number smaller than 5? </h2>
 Number:
 <input id="biggerNumberBox">
 <input type="button" value="enter" id="biggerNumberButton">
@@ -182,10 +182,10 @@ Number:
 <script>
 document.getElementById('biggerNumberButton').onclick = function(){
   number = Number(document.getElementById('biggerNumberBox').value)
-  if (number > 5) {
-    result = 'Yes! ' + number + ' is greater than 5!'
+  if (number < 5) {
+    result = 'Yes! ' + number + ' is less than 5!'
   } else {
-    result = 'Nope. ' + number + ' is not bigger than 5. Try a bigger number :)'
+    result = 'Nope. ' + number + ' is not smaller than 5. Try a smaller number :)'
   }
   document.getElementById('biggerNumberAnswer').textContent = result
 }
