@@ -1,5 +1,6 @@
 <!doctype html><html><head>
 <title>camdens page</title>
+
 <style>
 body {
   color: #333;
@@ -168,7 +169,7 @@ Your favorite color:
   document.getElementById('colorButton').onclick = function(){
   color = document.getElementById('colorBox').value
   document.getElementById('color2Response').textContent = 'Okay, ' + color + '! i like that color!'
-  document.getElementById('color2Response').style.color = color
+  document.getElementById('colorResponse').style.color = ' + color + '
 }
 </script>
 </script>
@@ -241,17 +242,12 @@ document.getElementById('randomButton2').onclick = function(){
 
 <h2>Even bigger Random Numbers (Finish this one yourself.)</h2>
 Get a random number between 1 and
-<input id="HowBig" value="">
+<input id="howBig" value="">
 <input type="button" id="randomButton3" value="Go"> <span id="randomResult3"></span>
 <script>
 // Can you figure out how to do this one?
-document.getElementById('randomButton2').onclick = function(){
-  result = Math.random()
-  result = result * 10
-  result = Math.ceil(result)  // This rounds the number down
-  document.getElementById('randomResult2').textContent = result
-}
 </script>
+
 
 <h2>Number guessing game (Finish this one yourself.)</h2>
 I'm thinking of a number between 1 and 10. What do you think it is?
@@ -297,5 +293,4 @@ if (new Date() - location.search.substr(1) > 1000) location.href = location.path
 </script>
 </body>
 
-      <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/45413512/?autostart=false" frameborder="0" allowfullscreen></iframe>
-    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iGXvMLKNsS0" frameborder="0" allowfullscreen></iframe>
