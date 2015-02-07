@@ -163,6 +163,15 @@ document.getElementById('colorResponse').style.color = 'blue'
 Your favorite color:
 <input id="colorBox">
 <input type="button" value="enter" id="colorButton">
+<span id="colorResponse"></span>
+<script>
+  document.getElementById('colorButton').onclick = function(){
+  color = document.getElementById('colorBox').value
+  document.getElementById('colorResponse').textContent = 'Okay, ' + color + '! i like that color!'
+  document.getElementById('colorResponse').style.color = color
+}
+</script>
+</script>
 
 
 <h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
